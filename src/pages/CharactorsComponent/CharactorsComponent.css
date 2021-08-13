@@ -1,0 +1,36 @@
+.charactorContainer{
+    width: 100%;
+    margin: 5px 0;
+    box-shadow: 4px 4px 4px #f7f0f0;
+    background-color: white;
+
+}
+button{
+    width: 45px;
+    border: 1px solid;
+    height: 25px;
+    margin: 20px;
+    text-align: center;
+    background-color: #03a9f4;
+    cursor: pointer;
+    
+}
+.movePage{
+    display: flex;
+    float: right;
+    background-color: white;
+}
+.SearchInput{
+    display: flex;
+    justify-content: space-around;
+}
+input, input:focus{
+    width: 40%;
+    height: 28px;
+    border-radius: 20px;
+}
+.select,.select:focus{
+    height: 30px;
+    border-radius: 20px
+}
+

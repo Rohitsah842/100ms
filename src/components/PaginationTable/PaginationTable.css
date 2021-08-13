@@ -1,0 +1,14 @@
+table,th,td{
+    box-shadow: 0px 5px 0px 0px #dce1dc;
+    border-collapse: collapse;
+}
+th, td{
+    text-align: center;
+    height: 40px;
+}
+.charactorsTable{
+    width: 99%;
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+}
