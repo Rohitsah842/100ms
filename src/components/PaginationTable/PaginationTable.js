@@ -20,8 +20,7 @@ function PaginationTable({ post }) {
     const indexofLastPost = currentpage * 10;
     const indexofFirstPost = indexofLastPost - 10;
     let currentPosts = post.slice(indexofFirstPost, indexofLastPost)
-    console.log(currentpage);
-    console.log(noOfPage);
+
     if (currentpage > noOfPage) {
         setcurrentpage(1);
     }
@@ -41,7 +40,6 @@ function PaginationTable({ post }) {
     }
 
     useEffect(() => {
-        console.log(currentpage)
         if (currentpage > 1) {
             setprevbutton(false);
         }
@@ -53,6 +51,10 @@ function PaginationTable({ post }) {
         }
         if (currentpage <= 1 && prevbutton === false) {
             setprevbutton(true);
+        }
+        if (currentpage === 1) {
+            setnextbutton(false);
+
         }
     }, [currentpage])
 

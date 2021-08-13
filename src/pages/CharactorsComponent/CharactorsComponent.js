@@ -25,7 +25,6 @@ function CharactorsComponent() {
         badCharactorsData();
     }, []);
     function filterData(event) {
-        console.log(event.target.value)
         let currentPost = data.filter((data) => {
             return data.name.toLowerCase().includes(event.target.value.toLowerCase()) || data.occupation.includes(event.target.value);
         })
